@@ -54,4 +54,9 @@
     <string name="textMessageCashAddress">Оплата %1$.2f с помощью налички при получении</string>
     <string name="textButtonAdd">Добавить</string>
     <string name="textButtonExit">Выход</string>
+    <string name="textTheme">Тема</string>
+    <string name="textSubtheme">Подтема</string>
+    <string name="textAct">Действие</string>
+    <string name="textDone">Выбрано</string>
+    <string name="textNotDone">Не выбрано</string>
 </resources>

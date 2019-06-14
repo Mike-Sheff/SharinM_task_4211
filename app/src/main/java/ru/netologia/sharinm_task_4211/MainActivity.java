@@ -80,8 +80,8 @@ public class MainActivity extends AppCompatActivity {
     private void generateRandomItemData() {
         adapter.addItem(new ItemData(
                 images.get(random.nextInt(images.size())),
-                "Тема " + adapter.getCount(),
-                "Подтема",
+                getString(R.string.textTheme) + " " + adapter.getCount(),
+                getString(R.string.textSubtheme),
                 random.nextBoolean()));
     }
 
@@ -89,9 +89,9 @@ public class MainActivity extends AppCompatActivity {
     private void showItemData(int position) {
         ItemData itemData = adapter.getItem(position);
         Toast.makeText(MainActivity.this,
-                "Тема: " + itemData.getTitle() + "\n" +
-                        "Подтема: " + itemData.getSubtitle() + "\n" +
-                        "Действие: " + ((itemData.isChecked())? "Выбрано": "Не выбрано"),
+                getString(R.string.textTheme) + ": " + itemData.getTitle() + "\n" +
+                        getString(R.string.textSubtheme) + ": " + itemData.getSubtitle() + "\n" +
+                        getString(R.string.textAct) + ": "+ ((itemData.isChecked())? getString(R.string.textDone): getString(R.string.textNotDone)),
                 Toast.LENGTH_SHORT).show();
     }
 
